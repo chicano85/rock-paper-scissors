@@ -1,7 +1,84 @@
-body {
-  padding: 2rem;
-  height: 100vh;
-  background-image: url('../images/bg-adalab.png');
-  background-color: $color-bg;
-  font-family: $font-main;
+.main {
+  height: 100%;
+}
+.main__container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__title {
+  font-family: $font-subtitle;
+  font-size: 25px;
+  padding-top: 10px;
+}
+.main__image {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  transform: rotate(180deg);
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: move;
+  @keyframes move {
+    from {
+      margin-top: 2%;
+    }
+    to {
+      margin-bottom: 2%;
+    }
+  }
+}
+.main__container2 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.rock {
+  width: 80px;
+  height: 80px;
+}
+
+.paper {
+  width: 80px;
+  height: 80px;
+}
+
+.scissors {
+  width: 80px;
+  height: 80px;
+}
+
+.main__container3 {
+  font-family: $font-subtitle;
+  font-size: 15px;
+  margin-left: 40px;
+}
+.main__container3--items {
+  display: flex;
+  align-items: center;
+}
+
+#human {
+  color: rgb(10, 94, 105);
+  margin: 10px;
+}
+#machine {
+  color: rgb(10, 94, 105);
+  margin: 10px;
+}
+
+#result {
+  color: rgb(212, 63, 63);
+  margin: 10px;
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+}
+
+.container__button--reset {
+  font-weight: bold;
 }

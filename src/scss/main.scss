@@ -1,8 +1,9 @@
-@import 'core/variables';
-@import 'core/reset';
-@import 'components/code';
-@import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'pages/index';
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+@import "core/variables";
+@import "core/reset";
+@import "layout/page";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/index";

@@ -1,5 +1,9 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header {
+  background: rgb(75, 69, 69);
+  padding: 20px;
+}
+.title {
+  text-align: center;
+  font-family: $font-title;
+  color: white;
 }
