@@ -1,40 +1,29 @@
-<main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <include
-        src="./link.html"
-        aClass="link__adalab"
-        text="Adalab"
-        url="https://adalab.es"
-      ></include>
-    </li>
-    <li>
-      <include src="./link.html" text="Más info del starter kit" url="./more-info.html"></include>
-    </li>
-  </ul>
+<main class="main">
+  <div class="main__container1">
+    <h2 class="main__title">Elije tu jugada</h2>
+    <img class="main__image" src="./assets/images/hand.png" alt="mano señalando" title="selecciona una jugada"/>
+  </div>
+  <div class="main__container2">
+
+    <img class="rock" src="./assets/images/rock.png" onClick="play(0)"/>
+    <img class="paper"src="./assets/images/paper.png" onClick="play(1)"/>
+    <img class="scissors" src="./assets/images/scissors.png" onClick="play(2)"/>
+  </div>
+  <div class="main__container3">
+    <div class="main__container3--items">
+      <h2>Jugador:</h2>
+      <h3 id="human"></h3>
+    </div>
+    <div class="main__container3--items">
+      <h2>Máquina:</h2>
+      <h3 id="machine"></h3> 
+    </div>
+    <div class="main__container3--items">
+      <h2>El resultado es:</h2>
+      <h3 id="result"></h3>
+    </div>
+  </div>
+  <div class="container__button">
+  <button class="container__button--reset js-reset">NUEVA PARTIDA</button>
+</div>
 </main>
