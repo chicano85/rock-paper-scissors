@@ -25,7 +25,7 @@ function play(obj) {
     document.getElementById("result").innerHTML = res;
   }
 
-  if (movMachine === "piedra" && movHuman === "tijeras") {
+  if (movMachine === "piedra" && movHuman === "tijera") {
     res = "¡Pierdes! La piedra le gana a las tijeras";
     document.getElementById("result").innerHTML = res;
   }
@@ -37,19 +37,19 @@ function play(obj) {
     res = "¡Empate!";
     document.getElementById("result").innerHTML = res;
   }
-  if (movMachine === "papel" && movHuman === "tijeras") {
+  if (movMachine === "papel" && movHuman === "tijera") {
     res = "¡Ganas! Las tijeras ganan a papel";
     document.getElementById("result").innerHTML = res;
   }
-  if (movMachine === "tijeras" && movHuman === "tijeras") {
+  if (movMachine === "tijera" && movHuman === "tijera") {
     res = "¡Empate!";
     document.getElementById("result").innerHTML = res;
   }
-  if (movMachine === "tijeras" && movHuman === "piedra") {
+  if (movMachine === "tijera" && movHuman === "piedra") {
     res = "¡Ganas! La piedra gana a las tijeras";
     document.getElementById("result").innerHTML = res;
   }
-  if (movMachine === "tijeras" && movHuman === "papel") {
+  if (movMachine === "tijera" && movHuman === "papel") {
     res = "¡Pierdes! Las tijeras ganan al papel";
     document.getElementById("result").innerHTML = res;
   }
