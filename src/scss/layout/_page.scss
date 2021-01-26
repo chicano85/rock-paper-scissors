@@ -81,4 +81,17 @@
 
 .container__button--reset {
   font-weight: bold;
+  color: white;
+  padding: 10px;
+  background: #f35c69;
+  border-radius: 28px;
+  border: none;
+  box-shadow: 6px 5px 24px #666666;
+  outline: none;
+}
+
+.container__button--reset:hover {
+  background: transparent;
+  color: #f35c69;
+  border: 2px solid #f35c69;
 }
